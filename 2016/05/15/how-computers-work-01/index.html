@@ -18,7 +18,8 @@
 程序是指令和数据的集合
 计算机的处理方式有时与人们的思维喜欢不同">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/6e3e82cdgw1f3wc7rc6tdj20hd05smxu.jpg">
-<meta property="og:updated_time" content="2016-05-15T12:30:48.000Z">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/6e3e82cdgw1f3wd3y5wp1j20ie0bnac4.jpg">
+<meta property="og:updated_time" content="2016-05-15T12:55:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="how-computers-work-01">
 <meta name="twitter:description" content="计算机的三大原则
@@ -69,7 +70,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://qiguer.github.io"></form>
@@ -120,6 +121,16 @@
 <li>I/O，负责将计算机和外部设备连接在一起</li>
 <li>时钟发生器，每隔一定时间就变换一次电压的高低，它的信号频率可以衡量CPU的运转速度</li>
 </ul>
+<h3 id="CPU内部结构解析"><a href="#CPU内部结构解析" class="headerlink" title="CPU内部结构解析"></a>CPU内部结构解析</h3><p>CPU的内部由以下四个主要部分构成：</p>
+<ul>
+<li>寄存器，暂存指令、数据等处理对象；根据种类的不同，一个CPU内部会有不同数量的寄存器；</li>
+<li>控制器，负责把内存上的指令、数据等读入寄存器，并根据指令的执行结果来控制整个计算机；</li>
+<li>运算器，负责运算从内存读入寄存器的数据；</li>
+<li>时钟，负责发出CPU开始计时的时钟信号；</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1GHz =  10 亿次/秒</span><br><span class="line"></span><br><span class="line">当前的Intel i5-3320M CPU @ 2.60GHz 就是 2.60 GHz = 26 亿次/秒</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww3.sinaimg.cn/large/6e3e82cdgw1f3wd3y5wp1j20ie0bnac4.jpg" alt=""></p>
+<h3 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h3><p>内存通过控制芯片与CPU相连，主要负责存储指令和数据；内存由可读写的元素构成，每个字节都带有一个地址编号；CPU可以通过该地址读取内存中的指令和数据，也可以像内存中写入数据；</p>
 
       
     </div>
@@ -159,7 +170,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/">computer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/program/">program</a><span class="tag-list-count">1</span></li></ul>
     </div>
@@ -169,7 +180,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
       <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/program/" style="font-size: 10px;">program</a>
     </div>
@@ -178,7 +189,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">3</span></li></ul>
     </div>
@@ -188,7 +199,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
         
