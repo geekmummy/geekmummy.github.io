@@ -53,7 +53,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://qiguer.github.io"></form>
@@ -188,30 +188,80 @@
 <h3 id="画流程图来思考算法"><a href="#画流程图来思考算法" class="headerlink" title="画流程图来思考算法"></a>画流程图来思考算法</h3><p>所谓算法(Algorithm),就是解决既定问题的步骤。想让计算机解决问题,就需要把问题的解法转换成程序的流程</p>
 <p>思考算法时的要点是要分两步走,先从整体上考虑程序的粗略流程,再考虑程序各个部分细节的流程。</p>
 <h3 id="与算法成为好朋友的七个要点"><a href="#与算法成为好朋友的七个要点" class="headerlink" title="与算法成为好朋友的七个要点"></a>与算法成为好朋友的七个要点</h3><p>即“输入数值”“执行加法运算”“展示结果”,被称为算法</p>
-<p>要点 1:算法中解决问题的步骤是明确且有限的</p>
-<p>要点 2:计算机不靠直觉而是机械地解决问题</p>
-<p>要点 3:了解并应用典型算法</p>
-<p>要点 4:利用计算机的处理速度</p>
-<p>要点 5:使用编程技巧提升程序执行速度</p>
-<p>要点 6:找出数字间的规律</p>
-<p>要点 7:先在纸上考虑算法</p>
+<ul>
+<li><p>要点 1:算法中解决问题的步骤是明确且有限的</p>
+</li>
+<li><p>要点 2:计算机不靠直觉而是机械地解决问题</p>
+</li>
+<li><p>要点 3:了解并应用典型算法</p>
+</li>
+</ul>
 <p><img src="http://ww3.sinaimg.cn/large/691a3013gw1f41mxmfzbij206e05bq3b.jpg" alt=""></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">画流程图就可以方便地把算法用图表示出来,因此请诸位大量地、灵活地运用它。</span><br><span class="line">与数据结构成为好朋友的七个要点</span><br></pre></td></tr></table></figure>
-<p>如何结合计算机的特性,用程序来表示现实世界中的数据结构。</p>
-<p>要点 1:了解内存和变量的关系</p>
+<ul>
+<li><p>要点 4:利用计算机的处理速度</p>
+</li>
+<li><p>要点 5:使用编程技巧提升程序执行速度</p>
+</li>
+<li><p>要点 6:找出数字间的规律</p>
+</li>
+<li><p>要点 7:先在纸上考虑算法</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">画流程图就可以方便地把算法用图表示出来,因此请诸位大量地、灵活地运用它。</span><br></pre></td></tr></table></figure>
+<h1 id="与数据结构成为好朋友的七个要点"><a href="#与数据结构成为好朋友的七个要点" class="headerlink" title="与数据结构成为好朋友的七个要点"></a>与数据结构成为好朋友的七个要点</h1><p>如何结合计算机的特性,用程序来表示现实世界中的数据结构。</p>
+<ul>
+<li>要点 1:了解内存和变量的关系</li>
+</ul>
 <p>变量是程序中数据存储的最小单位,每个变量都对应着一块物理上的内存空间。</p>
-<p>要点 2:了解作为数据结构基础的数组</p>
+<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f468w9mpt5j20d006xwfi.jpg" alt=""></p>
+<ul>
+<li>要点 2:了解作为数据结构基础的数组</li>
+</ul>
 <p>数组实际上是为了存储多个数据而在内存上集中分配出的一块内存空间,并且为这块空间整体赋予了一个名字。</p>
-<p>要点 3:了解数组的应用——作为典型算法的数据结构</p>
-<p>要点 4:了解并掌握典型数据结构的类型和概念</p>
-<p>“栈”(Stack):数据从下往上堆积，按照从上往下的顺序取数据。这种存取方式为LIFO（Last In First Out,后进先出）</p>
-<p>“队列”(Queue)：等待做某事而排成的队，最先被存入的数据最先被处理，被称为FIFO（First In First Out,先进先出）</p>
-<p>“链表”：几人手拉手排成一排，当某人松开一只手，去拉另一个人的手，这排人的排列顺序就改变了。</p>
-<p>“二叉树”：如图每个分叉点上一片叶子（相当于数据）</p>
-<p>要点 5:了解栈和队列的实现方法</p>
-<p>栈和队列的相似点在于,它们都可以把不能立刻处理的数据暂时存储起来;<br>不同点在于,栈对所存储数据的存取方式是 LIFO 的,而队列对所存储数据的存取方式是 FIFO 的。<br>要点 6:了解结构体的组成</p>
-<p>要点 7:了解链表和二叉树的实现方法</p>
-
+<p><img src="http://ww2.sinaimg.cn/large/691a3013gw1f468yl2d78j20cw06t0tu.jpg" alt=""></p>
+<ul>
+<li>要点 3:了解数组的应用——作为典型算法的数据结构</li>
+</ul>
+<p>数组是数据结构的基础，只要使用数组就能通过程序实现各种各样的算法以处理大量的数据。</p>
+<ul>
+<li>要点 4:了解并掌握典型数据结构的类型和概念</li>
+</ul>
+<p><img src="http://ww4.sinaimg.cn/large/691a3013gw1f4691l392vj206u03omxo.jpg" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“栈”(Stack):数据从下往上堆积，按照从上往下的顺序取数据。这种存取方式为LIFO（Last In First Out,后进先出）</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww3.sinaimg.cn/large/691a3013gw1f4693j4soyj20cw05sjrx.jpg" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“队列”(Queue)：等待做某事而排成的队，最先被存入的数据最先被处理，被称为FIFO（First In First Out,先进先出）</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f4694eyswxj20ct05d3z1.jpg" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“链表”：几人手拉手排成一排，当某人松开一只手，去拉另一个人的手，这排人的排列顺序就改变了。</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww4.sinaimg.cn/large/691a3013gw1f4695aw104j20cw057wez.jpg" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“二叉树”：如图每个分叉点上一片叶子（相当于数据）</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww3.sinaimg.cn/large/691a3013gw1f4696gsqucj20cu073jrv.jpg" alt=""></p>
+<ul>
+<li>要点 5:了解栈和队列的实现方法</li>
+</ul>
+<h4 id="栈和队列的相似点在于-它们都可以把不能立刻处理的数据暂时存储起来-不同点在于-栈对所存储数据的存取方式是-LIFO-的-而队列对所存储数据的存取方式是-FIFO-的。"><a href="#栈和队列的相似点在于-它们都可以把不能立刻处理的数据暂时存储起来-不同点在于-栈对所存储数据的存取方式是-LIFO-的-而队列对所存储数据的存取方式是-FIFO-的。" class="headerlink" title="栈和队列的相似点在于,它们都可以把不能立刻处理的数据暂时存储起来;不同点在于,栈对所存储数据的存取方式是 LIFO 的,而队列对所存储数据的存取方式是 FIFO 的。"></a>栈和队列的相似点在于,它们都可以把不能立刻处理的数据暂时存储起来;不同点在于,栈对所存储数据的存取方式是 LIFO 的,而队列对所存储数据的存取方式是 FIFO 的。</h4><blockquote>
+<p>在实现栈这种数据结构时，首先要定义一个数组和一个变量。数组中所包含的元素个数就是栈的大小（栈中最多能存放多少个数据）。变量中则存储着一个索引，指向存储在栈中最顶端的数据，该变量被称为“栈顶指针”。栈的大小可以根据程序的需求任意指定。</p>
+<p>这个数组就是栈的基础。接下来编写两个函数，一个函数用于把数据存入到栈中，也叫作压入到栈中；另一个函数用于从栈中把数据取出来，也叫作从栈中弹出来。在这两个函数中，都需要更新栈中所存储的数据的总数，以及更新栈顶指针的位置。也就是说通过使用由数组、栈顶指针以及入栈函数和出栈函数所构成的集合，就能实现栈这种数据结构了。</p>
+<p><img src="http://ww4.sinaimg.cn/large/691a3013gw1f46m5touqzj20cx06v758.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/large/691a3013gw1f46m6o409ij20ci01ydfv.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/large/691a3013gw1f46m7m5mgzj20cv09hjt8.jpg" alt=""></p>
+<p>为了实现队列这种数据结构，以下元素是必不可少的：</p>
+<ol>
+<li>一个任意大小的数组；</li>
+<li>一个用于存放排在队头的数据对应的索引的变量；</li>
+<li>一个用于存放排在队尾的数据对应的索引的变量；</li>
+<li>一对儿函数，分别用于把数据存入到队列中和从队列中把数据取出来。</li>
+</ol>
+<p>如果数据一直存放到了数组的末尾，那么下一个存储位置就会折回到数组的开头。这样就相当于数组的末尾就和它的开头连接上了，于是虽然数组的物理结构是“直线”，但是其逻辑结构已经变成“圆环”了</p>
+<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f46mak8icqj20cz0dcwgi.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/large/691a3013gw1f46mb5ih4jj20cy09ygnx.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li>要点 6:了解结构体的组成<h3 id="所谓结构体（struct），就是把若干个数据项汇集到一处并赋予其名字后所形成的一个整体。就可以把结构体当作是一种数据类型，用它来定义变量。被汇集到结构体中的每个数据项都被称作“结构体的成员”。"><a href="#所谓结构体（struct），就是把若干个数据项汇集到一处并赋予其名字后所形成的一个整体。就可以把结构体当作是一种数据类型，用它来定义变量。被汇集到结构体中的每个数据项都被称作“结构体的成员”。" class="headerlink" title="所谓结构体（struct），就是把若干个数据项汇集到一处并赋予其名字后所形成的一个整体。就可以把结构体当作是一种数据类型，用它来定义变量。被汇集到结构体中的每个数据项都被称作“结构体的成员”。"></a>所谓结构体（struct），就是把若干个数据项汇集到一处并赋予其名字后所形成的一个整体。就可以把结构体当作是一种数据类型，用它来定义变量。被汇集到结构体中的每个数据项都被称作“结构体的成员”。</h3></li>
+</ul>
+<h3 id="只要巧妙地运用结构体的数组就可以实现链表和二叉树"><a href="#只要巧妙地运用结构体的数组就可以实现链表和二叉树" class="headerlink" title="只要巧妙地运用结构体的数组就可以实现链表和二叉树"></a>只要巧妙地运用结构体的数组就可以实现链表和二叉树</h3><ul>
+<li>要点 7:了解链表和二叉树的实现方法</li>
+</ul>
+<h4 id="链表是一种类似数组的数据结构，这个“数组”中的每个元素和另一个元素都好像是手拉着手一样。为了让各个元素“把手拉起来”，就需要在结构体中再添加一个成员。这种特殊的结构体可以称为“自我引用的结构体”。"><a href="#链表是一种类似数组的数据结构，这个“数组”中的每个元素和另一个元素都好像是手拉着手一样。为了让各个元素“把手拉起来”，就需要在结构体中再添加一个成员。这种特殊的结构体可以称为“自我引用的结构体”。" class="headerlink" title="链表是一种类似数组的数据结构，这个“数组”中的每个元素和另一个元素都好像是手拉着手一样。为了让各个元素“把手拉起来”，就需要在结构体中再添加一个成员。这种特殊的结构体可以称为“自我引用的结构体”。"></a>链表是一种类似数组的数据结构，这个“数组”中的每个元素和另一个元素都好像是手拉着手一样。为了让各个元素“把手拉起来”，就需要在结构体中再添加一个成员。这种特殊的结构体可以称为“自我引用的结构体”。</h4><h4 id="在C-语言中，把存储着地址的变量称为“指针”。这里的“-”（星号）就是指针的标志。"><a href="#在C-语言中，把存储着地址的变量称为“指针”。这里的“-”（星号）就是指针的标志。" class="headerlink" title="在C 语言中，把存储着地址的变量称为“指针”。这里的“*”（星号）就是指针的标志。"></a>在C 语言中，把存储着地址的变量称为“指针”。这里的“*”（星号）就是指针的标志。</h4><p><img src="http://ww2.sinaimg.cn/large/691a3013gw1f46r9es931j20gn08o760.jpg" alt=""></p>
+<h4 id="Ptr-中存储着本元素接下来该与哪一个元素相连的信息，即下一个元素的地址。在链表的初始状态中，会按照元素在内存上的分布情况设定成员Ptr-的值。"><a href="#Ptr-中存储着本元素接下来该与哪一个元素相连的信息，即下一个元素的地址。在链表的初始状态中，会按照元素在内存上的分布情况设定成员Ptr-的值。" class="headerlink" title="Ptr 中存储着本元素接下来该与哪一个元素相连的信息，即下一个元素的地址。在链表的初始状态中，会按照元素在内存上的分布情况设定成员Ptr 的值。"></a>Ptr 中存储着本元素接下来该与哪一个元素相连的信息，即下一个元素的地址。在链表的初始状态中，会按照元素在内存上的分布情况设定成员Ptr 的值。</h4><h4 id="因为Ptr-中存储的是与下一个数组元素的连接信息，所以只要替换了Ptr-的值，就可以对数组中的元素排序，使元素的排列顺序不同于其在内存上的物理排列顺序。"><a href="#因为Ptr-中存储的是与下一个数组元素的连接信息，所以只要替换了Ptr-的值，就可以对数组中的元素排序，使元素的排列顺序不同于其在内存上的物理排列顺序。" class="headerlink" title="因为Ptr 中存储的是与下一个数组元素的连接信息，所以只要替换了Ptr 的值，就可以对数组中的元素排序，使元素的排列顺序不同于其在内存上的物理排列顺序。"></a>因为Ptr 中存储的是与下一个数组元素的连接信息，所以只要替换了Ptr 的值，就可以对数组中的元素排序，使元素的排列顺序不同于其在内存上的物理排列顺序。</h4><p><img src="http://ww3.sinaimg.cn/large/691a3013gw1f46rcqx9c6j20gq08ptag.jpg" alt=""></p>
+<h4 id="。在二叉树的实现中，用的还是自我引用的结构体，只不过要改为要带有两个连接信息的成员的自我引用结构体。"><a href="#。在二叉树的实现中，用的还是自我引用的结构体，只不过要改为要带有两个连接信息的成员的自我引用结构体。" class="headerlink" title="。在二叉树的实现中，用的还是自我引用的结构体，只不过要改为要带有两个连接信息的成员的自我引用结构体。"></a>。在二叉树的实现中，用的还是自我引用的结构体，只不过要改为要带有两个连接信息的成员的自我引用结构体。</h4><h4 id="二叉树多用于实现那些用于搜索数据的算法，比如“二分查找法”。比起只使用链表，使用二叉树能够更快地找到数据。因为搜索数据时并不是像在简单数组中那样沿一条线搜索，而是寻着二叉树不断生长出来的两根树杈中的某一枝搜索，这样就能更快地找到目标数据了。"><a href="#二叉树多用于实现那些用于搜索数据的算法，比如“二分查找法”。比起只使用链表，使用二叉树能够更快地找到数据。因为搜索数据时并不是像在简单数组中那样沿一条线搜索，而是寻着二叉树不断生长出来的两根树杈中的某一枝搜索，这样就能更快地找到目标数据了。" class="headerlink" title="二叉树多用于实现那些用于搜索数据的算法，比如“二分查找法”。比起只使用链表，使用二叉树能够更快地找到数据。因为搜索数据时并不是像在简单数组中那样沿一条线搜索，而是寻着二叉树不断生长出来的两根树杈中的某一枝搜索，这样就能更快地找到目标数据了。"></a>二叉树多用于实现那些用于搜索数据的算法，比如“二分查找法”。比起只使用链表，使用二叉树能够更快地找到数据。因为搜索数据时并不是像在简单数组中那样沿一条线搜索，而是寻着二叉树不断生长出来的两根树杈中的某一枝搜索，这样就能更快地找到目标数据了。</h4><p><img src="http://ww4.sinaimg.cn/large/691a3013gw1f46ri0fepfj20gl0d7dj4.jpg" alt=""></p>
+<h1 id="用其他的语言，该如何实现栈、队列、链表和二叉树。"><a href="#用其他的语言，该如何实现栈、队列、链表和二叉树。" class="headerlink" title="用其他的语言，该如何实现栈、队列、链表和二叉树。"></a>用其他的语言，该如何实现栈、队列、链表和二叉树。</h1><h1 id="无论是在哪种编程语言中，数据结构的基础都是数组，因此设法灵活地运用数组才是关键。"><a href="#无论是在哪种编程语言中，数据结构的基础都是数组，因此设法灵活地运用数组才是关键。" class="headerlink" title="无论是在哪种编程语言中，数据结构的基础都是数组，因此设法灵活地运用数组才是关键。"></a>无论是在哪种编程语言中，数据结构的基础都是数组，因此设法灵活地运用数组才是关键。</h1>
       
     </div>
     <footer class="article-footer">
@@ -249,8 +299,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="step-0"><a href="#step-0" class="headerlink" title="step 0:"></a>step 0:</h3><p>在github官网<a href="https://github.com/" target="_blank" rel="external">link</a>,注册个人账户 ###</p>
-<h3 id="step-1-从-百度软件-中-下载-git"><a href="#step-1-从-百度软件-中-下载-git" class="headerlink" title="step 1: 从 百度软件 中 下载 git;"></a>step 1: 从 百度软件 中 下载 git;</h3><h3 id="step-2"><a href="#step-2" class="headerlink" title="step 2:"></a>step 2:</h3><p>重新生成 a new SSH key,参考步骤<a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" rel="external">link</a>, 根据生成的地址，找到 id_rsa文件，复制里面的内容。进入github个人主页：setting-SSH and GPG keys,给你的key 取名，并将上一步复制的内容，黏贴到 Key 框里。</p>
+        <h3 id="step-0"><a href="#step-0" class="headerlink" title="step 0:"></a>step 0:</h3><p>在github官网<a href="https://github.com/" target="_blank" rel="external">link</a>,注册个人账户</p>
+<h3 id="step-1-从-百度软件-中-下载-git"><a href="#step-1-从-百度软件-中-下载-git" class="headerlink" title="step 1: 从 百度软件 中 下载 git;"></a>step 1: 从 百度软件 中 下载 git;</h3><h3 id="step-2"><a href="#step-2" class="headerlink" title="step 2:"></a>step 2:</h3><ol>
+<li>重新生成 a new SSH key,参考步骤<a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" rel="external">link</a>；</li>
+<li>根据生成的地址，找到 id_rsa文件，复制里面的内容。</li>
+<li>进入github个人主页：setting-SSH and GPG keys,给你的key 取名，并将上一步复制的内容，黏贴到 Key 框里。</li>
+</ol>
 <h3 id="step-3"><a href="#step-3" class="headerlink" title="step:3:"></a>step:3:</h3>
       
     </div>
@@ -277,7 +331,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/default/">default</a><span class="tag-list-count">3</span></li></ul>
     </div>
@@ -287,7 +341,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
       <a href="/tags/default/" style="font-size: 10px;">default</a>
     </div>
@@ -296,7 +350,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">4</span></li></ul>
     </div>
@@ -306,7 +360,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
