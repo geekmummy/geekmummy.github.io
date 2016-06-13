@@ -5,12 +5,20 @@
   
   <title>learn-C-04 | Qiguer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#include&amp;lt;stdio.h&amp;gt;    int main(void){      printf(“This C stuff is easy!\n”);      return(0);    }">
+  <meta name="description" content="#include&amp;lt;stdio.h&amp;gt;
+int main(void){
+  printf(&amp;quot;This C stuff is easy!\n&amp;quot;);
+  return(0);
+}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="learn-C-04">
 <meta property="og:url" content="http://qiguer.github.io/2016/06/12/learn-C-04/index.html">
 <meta property="og:site_name" content="Qiguer">
-<meta property="og:description" content="#include&amp;lt;stdio.h&amp;gt;    int main(void){      printf(“This C stuff is easy!\n”);      return(0);    }">
+<meta property="og:description" content="#include&amp;lt;stdio.h&amp;gt;
+int main(void){
+  printf(&amp;quot;This C stuff is easy!\n&amp;quot;);
+  return(0);
+}">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/691a3013gw1f4r8mgkbc0j20at02vmx3.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/691a3013gw1f4r8zejlhuj207q012q2p.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/691a3013gw1f4r95pzvolj20ap039mx4.jpg">
@@ -19,10 +27,14 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/691a3013gw1f4s55ytoytj20c505u0tn.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/691a3013gw1f4s56fyqwvj206v01z3yo.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/691a3013gw1f4tbtei1wjj20g006674y.jpg">
-<meta property="og:updated_time" content="2016-06-13T03:06:15.152Z">
+<meta property="og:updated_time" content="2016-06-13T11:10:46.493Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learn-C-04">
-<meta name="twitter:description" content="#include&amp;lt;stdio.h&amp;gt;    int main(void){      printf(“This C stuff is easy!\n”);      return(0);    }">
+<meta name="twitter:description" content="#include&amp;lt;stdio.h&amp;gt;
+int main(void){
+  printf(&amp;quot;This C stuff is easy!\n&amp;quot;);
+  return(0);
+}">
 <meta name="twitter:image" content="http://ww3.sinaimg.cn/large/691a3013gw1f4r8mgkbc0j20at02vmx3.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Qiguer" type="application/atom+xml">
@@ -94,8 +106,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><code>#include&lt;stdio.h&gt;</code><br>    int main(void){<br>      printf(“This C stuff is easy!\n”);<br>      return(0);<br>    }</p>
-<a id="more"></a>
+        <pre><code>#include&lt;stdio.h&gt;
+int main(void){
+  printf(&quot;This C stuff is easy!\n&quot;);
+  return(0);
+}
+</code></pre><a id="more"></a>
 <h2 id="main函数"><a href="#main函数" class="headerlink" title="main函数"></a>main函数</h2><ul>
 <li>C语言中，所有命令和预定义函数应该使用小写字母；</li>
 <li>C程序由至少一个函数构成；</li>
@@ -130,31 +146,30 @@
 <h2 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h2><ul>
 <li>整个C程序从头至尾都应加上注释（comment）。</li>
 <li>边写，边注释；</li>
-<li><p>符号： 多行注释– /<em>…..</em>/   单行注释–//</p>
-<p>  return((s1 &lt; s2)? s1 : s2); /<em> gets the smaller of 2 values </em>/</p>
-</li>
+<li>符号： 多行注释– /<em>…..</em>/   单行注释–//</li>
 </ul>
+<p><code>return((s1 &lt; s2)? s1 : s2); /* gets the smaller of 2 values */</code></p>
 <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p><img src="http://ww3.sinaimg.cn/large/691a3013gw1f4tbtei1wjj20g006674y.jpg" alt=""></p>
 <ul>
 <li>变量名可以包含1-32个字符；</li>
 <li><p>必须以字母开头，后面可以是字母、数字或下划线的组合。如以下合法的变量名：</p>
-<p>  myData   pay94   age_limit   QtlyIncome   amount</p>
+<p>  <code>myData   pay94   age_limit   QtlyIncome   amount</code></p>
 </li>
 <li><p>不合法的变量名：</p>
-<p>  94pay   my Age    rate*pay</p>
+<p>  <code>94pay   my Age    rate*pay</code></p>
 </li>
 <li><p>赋值运算符（=），给变量赋值：</p>
-<p>  age = 31;<br>  newSales = sales + 2167.2;</p>
+<p>  <code>age = 31;</code><br>  <code>newSales = sales + 2167.2;</code></p>
 </li>
 <li><p>定义变量的同时，赋初值：</p>
-<p>  int numSold = 25, numBought;</p>
+<p>  <code>int numSold = 25, numBought;</code></p>
 </li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qiguer.github.io/2016/06/12/learn-C-04/" data-id="cipdb4dlv000858j07j8rocem" class="article-share-link">Share</a>
+      <a data-url="http://qiguer.github.io/2016/06/12/learn-C-04/" data-id="cipe7kjgv000aw4j0opp2m28d" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
@@ -196,7 +211,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/">computer</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/">computer</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -206,7 +221,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 20px;">C</a> <a href="/tags/computer/" style="font-size: 20px;">computer</a> <a href="/tags/github/" style="font-size: 10px;">github</a>
+      <a href="/tags/C/" style="font-size: 20px;">C</a> <a href="/tags/computer/" style="font-size: 15px;">computer</a> <a href="/tags/github/" style="font-size: 10px;">github</a>
     </div>
   </div>
 
@@ -215,7 +230,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">8</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 
@@ -226,6 +241,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/06/13/learn-C-06/">learn-C-06</a>
+          </li>
         
           <li>
             <a href="/2016/06/13/learn-C-05/">learn-C-05</a>
@@ -241,10 +260,6 @@
         
           <li>
             <a href="/2016/06/03/learn-C-03/">learn-C-03</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/02/learn-C-02/">learn-C-02</a>
           </li>
         
       </ul>
