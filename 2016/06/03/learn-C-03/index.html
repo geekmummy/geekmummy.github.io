@@ -3,17 +3,42 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: github | Qiguer</title>
+  <title>learn-C-03 | Qiguer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="To be a best tech woman!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Qiguer">
-<meta property="og:url" content="http://qiguer.github.io/tags/github/index.html">
+  <meta name="description" content="#include&amp;lt;stdio.h&amp;gt;
+int main()
+{
+int a=5,b=9;
+a=a+b;
+b=a-b;
+a=a-b;
+printf(&amp;quot;a=%d,b=%d\n&amp;quot;,a,b);
+}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="learn-C-03">
+<meta property="og:url" content="http://qiguer.github.io/2016/06/03/learn-C-03/index.html">
 <meta property="og:site_name" content="Qiguer">
-<meta property="og:description" content="To be a best tech woman!">
+<meta property="og:description" content="#include&amp;lt;stdio.h&amp;gt;
+int main()
+{
+int a=5,b=9;
+a=a+b;
+b=a-b;
+a=a-b;
+printf(&amp;quot;a=%d,b=%d\n&amp;quot;,a,b);
+}">
+<meta property="og:updated_time" content="2016-06-12T13:54:25.416Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Qiguer">
-<meta name="twitter:description" content="To be a best tech woman!">
+<meta name="twitter:title" content="learn-C-03">
+<meta name="twitter:description" content="#include&amp;lt;stdio.h&amp;gt;
+int main()
+{
+int a=5,b=9;
+a=a+b;
+b=a-b;
+a=a-b;
+printf(&amp;quot;a=%d,b=%d\n&amp;quot;,a,b);
+}">
   
     <link rel="alternate" href="/atom.xml" title="Qiguer" type="application/atom+xml">
   
@@ -62,58 +87,87 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/05/23/how-to-register-markdown2/" class="archive-article-date">
-  <time datetime="2016-05-23T15:01:49.000Z" itemprop="datePublished">May 23</time>
+        <section id="main"><article id="post-learn-C-03" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/03/learn-C-03/" class="article-date">
+  <time datetime="2016-06-03T08:13:59.424Z" itemprop="datePublished">2016-06-03</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/23/how-to-register-markdown2/">how-to-register-markdown2</a>
+    <h1 class="article-title" itemprop="name">
+      learn-C-03
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/05/23/how-to-set-github-ssh/" class="archive-article-date">
-  <time datetime="2016-05-23T14:15:38.000Z" itemprop="datePublished">May 23</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/23/how-to-set-github-ssh/">how-to-set-github-ssh</a>
-    </h1>
-  
+        <pre><code>    #include&lt;stdio.h&gt;
+int main()
+{
+int a=5,b=9;
+a=a+b;
+b=a-b;
+a=a-b;
+printf(&quot;a=%d,b=%d\n&quot;,a,b);
+}
+</code></pre><a id="more"></a>
+<h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h2><ul>
+<li>包括加+，减-，乘*，除/，求余（模运算）%，自增++，自减–。</li>
+<li>/除，5/3=1,-5/3=-1,结果<strong>取整后向0靠拢</strong></li>
+<li>%模运算，要求%两侧均为整型数据，7%2=1，-7%2=-1，7%-2=1，-7%-2=-1。</li>
+<li>++，–既可作为<strong>变量</strong>的前缀，也可为变量的后缀。</li>
+</ul>
+<p><code>++a; //先将a的值加1，然后使用a</code><br><code>a++; //先使用a,然后将a的值加1</code><br><code>--a; //先将a的值减1，然后使用a</code><br><code>a--; //先使用a,然后将a的值减1</code></p>
+<h2 id="算术表达式"><a href="#算术表达式" class="headerlink" title="算术表达式"></a>算术表达式</h2><ul>
+<li>C语言算术表达式的乘号*不能省略</li>
+<li>只能出现字符集允许的字符，如 πr2的C表达式为：PI<em>r</em>r。</li>
+<li>不允许有分子分母的形式。</li>
+<li>只使用圆括号改变运算的优先顺序，可使用多层圆括号。运算时从内层开始。</li>
+</ul>
+<p>算术运算符优先级：从高到低<br><code>-（取负），++，--，*，/，%，+，-</code><br><code>如：++a+b/5 =(++a)+(b/5)</code></p>
+<p>结合方向：<br><code>-（取负），++和--的结合方向为右结合，+，-，*，/和%的结合方向为左结合</code></p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://qiguer.github.io/2016/06/03/learn-C-03/" data-id="cipdb4dm4000c58j0w90btfba" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/12/learn-C-04/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          learn-C-04
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/02/learn-C-02/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">learn-C-02</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
