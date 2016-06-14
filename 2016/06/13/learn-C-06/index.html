@@ -5,22 +5,22 @@
   
   <title>learn-C-06 | Qiguer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="操作空间复合赋值计数器变量：当特定事件发生时，它的值增加1。">
+  <meta name="description" content="`int main(){  int age, intSize;  float gift;  printf(“How old are you?\n”);  scanf(“ %d”, age);  if (age&amp;lt;18)    gift=5.00;  else    gift=10.00;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="learn-C-06">
 <meta property="og:url" content="http://qiguer.github.io/2016/06/13/learn-C-06/index.html">
 <meta property="og:site_name" content="Qiguer">
-<meta property="og:description" content="操作空间复合赋值计数器变量：当特定事件发生时，它的值增加1。">
+<meta property="og:description" content="`int main(){  int age, intSize;  float gift;  printf(“How old are you?\n”);  scanf(“ %d”, age);  if (age&amp;lt;18)    gift=5.00;  else    gift=10.00;">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/691a3013gw1f4tor8rcuoj209q07ujst.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/691a3013gw1f4torr3jwvj203u031wel.jpg">
 <meta property="og:image" content="http://ww4.sinaimg.cn/large/691a3013gw1f4tseh4m5zj20g104st91.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/691a3013gw1f4tsi20chvj208d03wq2y.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/691a3013gw1f4tsvcnv17j20fq0573yp.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/691a3013gw1f4twd1zsjvj20ft0410su.jpg">
-<meta property="og:updated_time" content="2016-06-13T16:01:10.471Z">
+<meta property="og:updated_time" content="2016-06-14T00:43:56.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learn-C-06">
-<meta name="twitter:description" content="操作空间复合赋值计数器变量：当特定事件发生时，它的值增加1。">
+<meta name="twitter:description" content="`int main(){  int age, intSize;  float gift;  printf(“How old are you?\n”);  scanf(“ %d”, age);  if (age&amp;lt;18)    gift=5.00;  else    gift=10.00;">
 <meta name="twitter:image" content="http://ww1.sinaimg.cn/large/691a3013gw1f4tor8rcuoj209q07ujst.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Qiguer" type="application/atom+xml">
@@ -92,9 +92,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="操作空间"><a href="#操作空间" class="headerlink" title="操作空间"></a>操作空间</h1><h2 id="复合赋值"><a href="#复合赋值" class="headerlink" title="复合赋值"></a>复合赋值</h2><p>计数器变量：当特定事件发生时，它的值增加1。</p>
-<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f4tor8rcuoj209q07ujst.jpg" alt=""></p>
+        <p>`int main(){<br>  int age, intSize;<br>  float gift;<br>  printf(“How old are you?\n”);<br>  scanf(“ %d”, age);<br>  if (age&lt;18)<br>    gift=5.00;<br>  else<br>    gift=10.00;</p>
 <a id="more"></a>
+<p>  gift=(age&lt;18) ? 5.00:10.00;<br>  printf(“Your gift is $%.2f\n”,gift);<br>  age ++;<br>  printf(“In a year, you’ll be %d years old.\n”, age);<br>  intSize=sizeof(int);<br>  printf(“Integers take %d memory location.\n”,intSize);</p>
+<p>  return(0);<br>}<br>`</p>
+<p>输出的时候，“ In a year, you’ll be 2147332097 years old. ” 这个数值不对，怎么解决呢？</p>
+<h1 id="操作空间"><a href="#操作空间" class="headerlink" title="操作空间"></a>操作空间</h1><h2 id="复合赋值"><a href="#复合赋值" class="headerlink" title="复合赋值"></a>复合赋值</h2><p>计数器变量：当特定事件发生时，它的值增加1。</p>
+<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f4tor8rcuoj209q07ujst.jpg" alt=""></p>
 <p>输出为：</p>
 <p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f4torr3jwvj203u031wel.jpg" alt=""></p>
 <h3 id="复合赋值运算符"><a href="#复合赋值运算符" class="headerlink" title="复合赋值运算符"></a>复合赋值运算符</h3><pre><code>lossCount=lossCount+1; 等同于 lossCount +=1;
@@ -205,7 +209,7 @@ The size of name is 12
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qiguer.github.io/2016/06/13/learn-C-06/" data-id="cipe7kjh5000ew4j0emj305b7" class="article-share-link">Share</a>
+      <a data-url="http://qiguer.github.io/2016/06/13/learn-C-06/" data-id="cipfg4lz000088oj04f93lu6c" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li></ul>
@@ -215,6 +219,15 @@ The size of name is 12
   
     
 <nav id="article-nav">
+  
+    <a href="/2016/06/14/learn-C-07/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          learn-C-07
+        
+      </div>
+    </a>
   
   
     <a href="/2016/06/13/learn-C-05/" id="article-nav-older" class="article-nav-link-wrap">
@@ -238,7 +251,7 @@ The size of name is 12
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/">computer</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/">computer</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -257,7 +270,7 @@ The size of name is 12
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">8</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 
@@ -268,6 +281,10 @@ The size of name is 12
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/06/14/learn-C-07/">learn-C-07</a>
+          </li>
         
           <li>
             <a href="/2016/06/13/learn-C-06/">learn-C-06</a>
@@ -283,10 +300,6 @@ The size of name is 12
         
           <li>
             <a href="/2016/06/12/learn-C-04/">learn-C-04</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/03/learn-C-03/">learn-C-03</a>
           </li>
         
       </ul>
