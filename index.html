@@ -53,7 +53,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://qiguer.github.io"></form>
@@ -86,22 +86,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
-<li>定义数组： </li>
-</ul>
-<p><code>int i[25]；</code><br><code>char name[6]=&quot;Italy&quot;;  // leave room for the null</code></p>
-<ul>
-<li>在变量名后面加上方括号[]，并指定可能存放的最大元素个数。</li>
-<li>元素，指数组包含的值。</li>
-<li>如果初始的数值需要比要赋的初值大，就在定义数组时指定一个更大的数值大小，如：</li>
-</ul>
-<p><code>char name[80]=&quot;Italy&quot;;</code></p>
-<ul>
-<li>在定义数组时，可以通过把数组的数据放在大括号里并在数组名后面跟上等号来初始化数组。如下，既定义了一个整型数组又用5个值进行了初始化：</li>
-</ul>
-<p>int vals[5]={23,45,46,67,78}</p>
-<p><img src="http://ww2.sinaimg.cn/large/691a3013gw1f4ymiyve96j206x05zt8s.jpg" alt=""></p>
-
+        <figure class="highlight plain"><figcaption><span><stdio.h> #include <stdlib.h></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">int main(void) &#123;</span><br><span class="line">  char letters[50];</span><br><span class="line">  char userInit;</span><br><span class="line">  int ctr,n1,numInits=0;</span><br><span class="line">  for(ctr=0;ctr&lt;50;ctr++)&#123;</span><br><span class="line">    letters[ctr]=65+(rand()%26);</span><br><span class="line">  &#125;</span><br><span class="line">  printf(&quot;What is your first initial?\n&quot;);</span><br><span class="line">  userInit=getchar();</span><br><span class="line">  n1=getchar();</span><br><span class="line">  for(ctr=0;ctr&lt;50;ctr++)&#123;</span><br><span class="line">    if(letters[ctr]==userInit)&#123;</span><br><span class="line">      numInits++;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  printf(&quot;\nIn the array, there were %d of your initials.\n&quot;, numInits);</span><br><span class="line">  return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2016/06/17/learn-C-08/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
@@ -139,105 +129,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h1 id="保持控制"><a href="#保持控制" class="headerlink" title="保持控制"></a>保持控制</h1><h2 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h2><ul>
-<li>总是出现在循环的开始或结尾</li>
-<li>格式：</li>
-</ul>
-<p><code>while (condition){
-block of one or more C statements;
-}</code></p>
-<ul>
-<li>只要condition为真，while语句的主体就会一直重复执行。</li>
-<li>if和while 的共同点和不同点：</li>
-</ul>
-<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f4ujjs5yhfj20dg0833z8.jpg" alt=""></p>
-<pre><code>wrongVal++;的作用：改变condition中的变量，最终结束while 语句。
-</code></pre><h3 id="利用while清屏"><a href="#利用while清屏" class="headerlink" title="利用while清屏"></a>利用while清屏</h3><p><code>void dispTitle(void){
-    int i=0;
-    while(i&lt;25){
-        printf(&quot;\n&quot;);
-        i++;
-    }
-    printf(&quot;\n\n*step right up to the Blackjack tables*\n\n&quot;);
-    return;
-}</code></p>
-<h2 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h2><ul>
-<li><p>与while循环一样：</p>
-<p>  do {block of oneor more C statements;}<br>while (condition)</p>
-</li>
-<li><p>while 和 do-while 重复执行大括号中的所有代码；</p>
-</li>
-<li>二者的区别在于用来控制循环的关系测试所处的位置不同：while语句在循环的顶部测试</li>
-<li>do-while语句在循环的底部测试。</li>
-<li>选择while 还是 do-while 通常不太重要：2种循环可以做相同的事情。</li>
-</ul>
-<p><code>int main(void) {
-   int ctr=1;
-    while (ctr&lt;=20){
-      printf(&quot;%d\n&quot;, ctr);
-     ctr++;
-    }
-    ctr=1;
-    do {
-        printf(&quot;%d\n&quot;,ctr);
-         ctr++;
-    }while (ctr&lt;=20);
-    return 0;
-}</code></p>
-<h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><ul>
-<li>格式：</li>
-</ul>
-<p><code>for (startExpression; testExpression; countExpression)</code><br><code>{ block of oneor more C statements; }</code></p>
-<p><img src="http://ww4.sinaimg.cn/large/691a3013gw1f4ws646kdej207r02amx3.jpg" alt=""></p>
-<p><img src="http://ww3.sinaimg.cn/large/691a3013gw1f4ws8l1800j206n04jjre.jpg" alt=""></p>
-<p>用while语句实现相同功能：</p>
-<p><img src="http://ww4.sinaimg.cn/large/691a3013gw1f4wsbqmbirj207h02zt8n.jpg" alt=""></p>
-<p>嵌套循环：</p>
-<pre><code>for (outer=1; outer&lt;=3; outer++){
-    for (inner=1; inner&lt;=5; inner++) {
-        printf(&quot;%d&quot;, inner);}
-    printf(&quot;\n&quot;);}
-</code></pre><ul>
-<li>外层循环从1到3，内层循环用于打印前5名顾客；</li>
-<li>用于循环特定的次数，如 打印3张前5名顾客的列表（以上）</li>
-</ul>
-<h3 id="break"><a href="#break" class="headerlink" title="break;"></a>break;</h3><ul>
-<li>总是出现在循环中，用于终止当前的循环。</li>
-<li>break出现在循环主体中，break会立刻终止循环而程序的其他部分会继续执行。</li>
-</ul>
-<p><img src="http://ww2.sinaimg.cn/large/691a3013gw1f4wtlgtk24j20ch035t8s.jpg" alt=""></p>
-<p>以上代码中的break，使循环在打印5个数字后就停止了。</p>
-<pre><code>int main(void) {
-  int numTest;
-  float stTest,avg,total=0.0;
-
-  for(numTest=0; numTest&lt;25; numTest++){
-printf(&quot;what is the next student&apos;s test score?&quot;);
-scanf(&quot; %f&quot;, &amp;stTest);
-if (stTest &lt; 0.0){
-  break;
-}
-total+=stTest;
-  }
-  avg=total/numTest;
-  printf(&quot;\nthe average is %.1f%%.\n&quot;, avg);
-
-    return 0;
-}
-</code></pre><h3 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h3><p>-break使循环提前跳出，与之相反，continue是强迫循环提前继续。</p>
-<pre><code>int i;
-  for (i=1;i&lt;=10;i++){
-    if ((i%2)==1){
-  printf(&quot;I&apos;m rather odd...\n&quot;);
-  continue;
-}
-printf(&quot;Even up!\n&quot;);
-  }
-    return 0;
-}
-</code></pre><p>的</p>
-
+        <p><code>#include&lt;math.h&gt;
+po2=pow(2.0,2.0);
+printf(&quot;2 raised to the 2nd power is %.0f\n&quot;, po2);
+s2=sqrt(49);
+printf(&quot;The square root of 49 is %.0f\n&quot;, s2);
+si628=sin(6.28);
+print(&quot;The sine of 6.28 is %f\n&quot;, si628);
+r01=rand();
+printf(&quot;A random number from 1 to 32767 is %f\n&quot;, r01);</code></p>
+        
+          <p class="article-more-link">
+            <a href="/2016/06/14/learn-C-07/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
@@ -407,7 +312,7 @@ printf(&quot;Even up!\n&quot;);
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/">computer</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li></ul>
     </div>
@@ -417,7 +322,7 @@ printf(&quot;Even up!\n&quot;);
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
       <a href="/tags/C/" style="font-size: 20px;">C</a> <a href="/tags/computer/" style="font-size: 15px;">computer</a> <a href="/tags/github/" style="font-size: 10px;">github</a>
     </div>
@@ -426,7 +331,7 @@ printf(&quot;Even up!\n&quot;);
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">8</span></li></ul>
     </div>
@@ -436,7 +341,7 @@ printf(&quot;Even up!\n&quot;);
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
         

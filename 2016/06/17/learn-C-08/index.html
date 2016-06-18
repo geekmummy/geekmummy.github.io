@@ -5,50 +5,17 @@
   
   <title>learn-C-08 | Qiguer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="数组
-定义数组： 
-
-int i[25]；char name[6]=&amp;quot;Italy&amp;quot;;  // leave room for the null
-
-在变量名后面加上方括号[]，并指定可能存放的最大元素个数。
-元素，指数组包含的值。
-如果初始的数值需要比要赋的初值大，就在定义数组时指定一个更大的数值大小，如：
-
-char name[80]=&amp;quot;Italy&amp;quot;;
-
-在定">
+  <meta name="description" content="#include 123456789101112131415161718int main(void) &amp;#123;  char letters[50];  char userInit;  int ctr,n1,numInits=0;  for(ctr=0;ctr&amp;lt;50;ctr++)&amp;#123;    letters[ctr]=65+(rand()%26);  &amp;#125;  printf(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="learn-C-08">
 <meta property="og:url" content="http://qiguer.github.io/2016/06/17/learn-C-08/index.html">
 <meta property="og:site_name" content="Qiguer">
-<meta property="og:description" content="数组
-定义数组： 
-
-int i[25]；char name[6]=&amp;quot;Italy&amp;quot;;  // leave room for the null
-
-在变量名后面加上方括号[]，并指定可能存放的最大元素个数。
-元素，指数组包含的值。
-如果初始的数值需要比要赋的初值大，就在定义数组时指定一个更大的数值大小，如：
-
-char name[80]=&amp;quot;Italy&amp;quot;;
-
-在定">
+<meta property="og:description" content="#include 123456789101112131415161718int main(void) &amp;#123;  char letters[50];  char userInit;  int ctr,n1,numInits=0;  for(ctr=0;ctr&amp;lt;50;ctr++)&amp;#123;    letters[ctr]=65+(rand()%26);  &amp;#125;  printf(">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/691a3013gw1f4ymiyve96j206x05zt8s.jpg">
-<meta property="og:updated_time" content="2016-06-17T15:11:28.679Z">
+<meta property="og:updated_time" content="2016-06-18T15:25:06.538Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learn-C-08">
-<meta name="twitter:description" content="数组
-定义数组： 
-
-int i[25]；char name[6]=&amp;quot;Italy&amp;quot;;  // leave room for the null
-
-在变量名后面加上方括号[]，并指定可能存放的最大元素个数。
-元素，指数组包含的值。
-如果初始的数值需要比要赋的初值大，就在定义数组时指定一个更大的数值大小，如：
-
-char name[80]=&amp;quot;Italy&amp;quot;;
-
-在定">
+<meta name="twitter:description" content="#include 123456789101112131415161718int main(void) &amp;#123;  char letters[50];  char userInit;  int ctr,n1,numInits=0;  for(ctr=0;ctr&amp;lt;50;ctr++)&amp;#123;    letters[ctr]=65+(rand()%26);  &amp;#125;  printf(">
 <meta name="twitter:image" content="http://ww2.sinaimg.cn/large/691a3013gw1f4ymiyve96j206x05zt8s.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Qiguer" type="application/atom+xml">
@@ -89,7 +56,7 @@ char name[80]=&amp;quot;Italy&amp;quot;;
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://qiguer.github.io"></form>
@@ -120,7 +87,9 @@ char name[80]=&amp;quot;Italy&amp;quot;;
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
+        <figure class="highlight plain"><figcaption><span><stdio.h> #include <stdlib.h></stdlib.h></stdio.h></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">int main(void) &#123;</span><br><span class="line">  char letters[50];</span><br><span class="line">  char userInit;</span><br><span class="line">  int ctr,n1,numInits=0;</span><br><span class="line">  for(ctr=0;ctr&lt;50;ctr++)&#123;</span><br><span class="line">    letters[ctr]=65+(rand()%26);</span><br><span class="line">  &#125;</span><br><span class="line">  printf(&quot;What is your first initial?\n&quot;);</span><br><span class="line">  userInit=getchar();</span><br><span class="line">  n1=getchar();</span><br><span class="line">  for(ctr=0;ctr&lt;50;ctr++)&#123;</span><br><span class="line">    if(letters[ctr]==userInit)&#123;</span><br><span class="line">      numInits++;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  printf(&quot;\nIn the array, there were %d of your initials.\n&quot;, numInits);</span><br><span class="line">  return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
 <li>定义数组： </li>
 </ul>
 <p><code>int i[25]；</code><br><code>char name[6]=&quot;Italy&quot;;  // leave room for the null</code></p>
@@ -133,8 +102,24 @@ char name[80]=&amp;quot;Italy&amp;quot;;
 <ul>
 <li>在定义数组时，可以通过把数组的数据放在大括号里并在数组名后面跟上等号来初始化数组。如下，既定义了一个整型数组又用5个值进行了初始化：</li>
 </ul>
-<p>int vals[5]={23,45,46,67,78}</p>
+<p>int vals[5]={10,40,70,90,120}</p>
 <p><img src="http://ww2.sinaimg.cn/large/691a3013gw1f4ymiyve96j206x05zt8s.jpg" alt=""></p>
+<h2 id="填充数组"><a href="#填充数组" class="headerlink" title="填充数组"></a>填充数组</h2><ul>
+<li>赋值：char name[6]=”Italy</li>
+<li>用户数据输入；</li>
+<li>磁盘文件。</li>
+</ul>
+<p>int main(void) {<br>  int ctr;<br>  int idSearch;<br>  int found =0;<br>  int custID[10]={313,453,502,101,892,475,792,912,343,633};<br>  float custBal[10]={0.00,45.43,71.23,301.56,9.08,192.41,389.00,229.67,18.31,59.54};</p>
+<p>  printf(“\n\n<strong><em>Customer Balance Lookup </em></strong>\n”);<br>  printf(“What is the customer number?\n “);<br>  scanf(“ %d”,&amp;idSearch);</p>
+<p>  for (ctr=0;ctr&lt;10;ctr++){<br>    if(idSearch==custID[ctr]){<br>      found=1;<br>      break;<br>    }<br>  }</p>
+<p>  if(found){<br>    if(custBal[ctr]&gt;100.00){<br>      printf(“\n<strong> That customer’s balance is $%.2f.\n”, custBal[ctr]);<br>      printf(“No credit!\n”);<br>    }<br>    else {<br>      printf(“\n</strong> The customer’s credit is good!\n”);<br>    }<br>  }</p>
+<p>  else {<br>    printf(“** You must have typed an incorrect customer ID.”);<br>    printf(“\n ID %3d was not found in list.\n”, idSearch);<br>  }</p>
+<p>  return 0;<br>}</p>
+<ul>
+<li>该程序定义两个数组，称并行数组。并用顾客ID号和匹配的欠款初始化。</li>
+<li>变量found 通常称为标记变量，它为程序的其他部分做标记，表明顾客ID是否找到。</li>
+<li>这里的程序搜索是顺序搜索；更高级的搜索技术叫二分搜索(binary search)和斐波那契搜索(Fibonacci search)。</li>
+</ul>
 
       
     </div>
@@ -170,7 +155,7 @@ char name[80]=&amp;quot;Italy&amp;quot;;
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/">computer</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li></ul>
     </div>
@@ -180,7 +165,7 @@ char name[80]=&amp;quot;Italy&amp;quot;;
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
       <a href="/tags/C/" style="font-size: 20px;">C</a> <a href="/tags/computer/" style="font-size: 15px;">computer</a> <a href="/tags/github/" style="font-size: 10px;">github</a>
     </div>
@@ -189,7 +174,7 @@ char name[80]=&amp;quot;Italy&amp;quot;;
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">8</span></li></ul>
     </div>
@@ -199,7 +184,7 @@ char name[80]=&amp;quot;Italy&amp;quot;;
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
         
