@@ -86,57 +86,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><h3 id="内存地址"><a href="#内存地址" class="headerlink" title="内存地址"></a>内存地址</h3><ul>
-<li>内存地址，从0开始，并逐渐增加</li>
-<li>每个地址就是不同的下标，每个内存位置就是不同的数组元素</li>
-</ul>
-<h3 id="定义指针变量"><a href="#定义指针变量" class="headerlink" title="定义指针变量"></a>定义指针变量</h3><ul>
-<li>定义指针变量，要理解以下 指针运算符</li>
-</ul>
-<p><img src="http://ww2.sinaimg.cn/large/691a3013gw1f52m9wbzcoj20g502zwei.jpg" alt=""></p>
-<pre><code>int *pNum;     // 指针变量名可随意定义。许多程序员喜欢以p(pointer,指针)开头
-float *pValue;
-</code></pre><ul>
-<li>指针变量存放了其他变量的地址。这是指针的主要用途</li>
-<li><p>用取址运算符<strong>&amp;</strong>，把一个变量的地址赋给一个指针。且指针未被初始化，不能用它们做任何事。</p>
-<p><code>int age=19; int *pAge=&amp;age; //定义整型变量age,并存储19。再定义指针变量pAge,并使它指向age.</code></p>
-</li>
-</ul>
-<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f52nhwgnnbj20bd06zq39.jpg" alt=""></p>
-<ul>
-<li>在指针定义时，用*表示这个变量是一个指针</li>
-<li><p>在把一个变量的地址赋给指针变量时不用*，除非在同时定义这个指针。</p>
-</li>
-<li><p>当把一个指针指向另一个变量后，可通过对指针取值来处理另一个值，用*取值运算符。</p>
-</li>
-<li><p>如上2条语句，有两种修改age值的方法：</p>
-<p>  age=25; *pAge=25;</p>
-</li>
-<li><p>打印age值的两种方法：</p>
-<pre><code>printf(&quot;the age is %d.\n&quot;, age);
-</code></pre><p><code>printf(&quot;the age is %d.\n&quot;, *pAge;</code></p>
-</li>
-</ul>
-<h1 id="数组和指针"><a href="#数组和指针" class="headerlink" title="数组和指针"></a>数组和指针</h1><ul>
-<li>数组是特殊类型的指针</li>
-<li>可用指针符号(*)来获取数组的值，也可用数组符号([])来访问指针指向的值</li>
-</ul>
-<h2 id="数组名是指针"><a href="#数组名是指针" class="headerlink" title="数组名是指针"></a>数组名是指针</h2><ul>
-<li>数组名是指向第一个数组元素的指针。是指针常量。</li>
-<li>如： int vals[5]={10,20,30,40,50};</li>
-<li>当你定义并初始化vals时，C语言设置一个指向数组的指针并命名为vals。</li>
-</ul>
-<p><img src="http://ww4.sinaimg.cn/large/691a3013gw1f52rsheom2j209s07nmxg.jpg" alt=""></p>
-<ul>
-<li>如打印数组的第一个值：</li>
-</ul>
-<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f52rtg7ahoj20dc04t74r.jpg" alt=""></p>
-<h2 id="在数组中取值"><a href="#在数组中取值" class="headerlink" title="在数组中取值"></a>在数组中取值</h2><p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f52run33dtj20dj06edgw.jpg" alt=""></p>
-<h2 id="字符和指针"><a href="#字符和指针" class="headerlink" title="字符和指针"></a>字符和指针</h2><p>两条语句在内存中设置了几乎相同的内容。</p>
-<p><img src="http://ww1.sinaimg.cn/large/691a3013gw1f52rw5iv89j20d901gq2w.jpg" alt=""></p>
-<p>唯一不同的是：第2条语句是指针变量。</p>
-
+        <pre><code>char input[81];    //holds a string as long as 80 characters 
+char *iptr=input;  //also could have done this: char *iptr=&amp;input[0];
+gets(iptr);       //makes sure that iptr points to the string typed by the user.
+</code></pre>
+        
+          <p class="article-more-link">
+            <a href="/2016/06/19/learn-C-09/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
